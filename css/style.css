@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: #f1f6fc31;
+}
+section, footer{
+    padding: 54px 0;
+}
+h3{
+    font-size: 50px;
+}
+p{
+    color: #0000009c;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.btn{
+    background-color: #4f9cf9;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+.btn:hover{
+    background-color: #3580db;
+}
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #4f9bf98a;
+    }
+    to{
+        outline: 15px solid #4f9bf900;
+    }
+}
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+nav ul a:not(.btn):after{
+    content: "";
+    background-color: #4f9cf9;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+.banner .banner-text h1{
+    font-size: 96px;
+    color: white;
+}
+.banner .banner-text p{
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+/* Faça mais  */
+.faca-mais .container{
+    display: flex;
+    align-items: center;
+}
+.faca-mais .faca-mais-text{
+    width: 50%;
+    padding: 0 40px;
+}
+.faca-mais .faca-mais-text h3{
+    font-size: 56px;
+}
+.faca-mais .faca-mais-text p{
+    margin: 5px 0 10px 0;
+}
+.faca-mais .faca-mais-img{
+    width: 50%;
+}
+.faca-mais .faca-mais-img img{
+    width: 100%;
+}
