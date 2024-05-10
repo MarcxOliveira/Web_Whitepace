@@ -217,7 +217,18 @@ nav .close-icon{
     margin-top: 10px;
     color: white;
 }
+/* Página sobre */
+.sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sobre .sobre-text{
+    width: 50%;
+    padding-right: 40%;
+}
 
+/* end página sobre */
 /* menu responsivel */
 @media(max-width: 830px){
    /* menu mobile */
