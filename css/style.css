@@ -145,6 +145,7 @@ nav .close-icon{
 .cards{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .depoimentos .card-item{
     background-color: #d3e6fd;
@@ -287,8 +288,95 @@ nav .close-icon{
 .dados{
     background-color: #d3e6fd;
 }
+.dados .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.dados .dados-item{
+    text-align: center;
+    margin: 15px;
+    color: #000000be;
+}
+.dados .dados-item img{
+    background-color: #4f9cf9;
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 80px;
+}
+.dados .dados-item p{
+    font-size: 18px;
+}
+.dados .dados-item p strong{
+    font-size: 28px;
+}
 
 /* end dados */
+
+/* Página de Contatos */
+
+.contato-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contato-info .left-side {
+    width: 50%;
+    padding: 30px;
+    background-color: #4f9cf9;
+    border-radius: 14px;
+    margin-right: 50px;
+    height: fit-content;
+}
+
+.contato-info .left-side div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contato-info .left-side div i{
+    font-size: 24px;
+    margin-right: 20px;
+    color: white;
+}
+.contato-info .left-side p{
+    font-size: 17px;
+    color: white;
+}
+.contato-info .right-side{
+    width: 50%;
+}
+.contato-info .right-side input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 47px;
+    padding: 15px;
+    border-radius: 9px;
+    transition: 0.3s;
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    font-weight: lighter;
+}
+.contato-info .right-side input:focus,
+.contato-info .right-side textarea:focus{
+    border-color: #4f9cf9;
+}
+.contato-info .right-side textarea{
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    transition: 0.3s;
+    resize: none;
+}
+.contato-info .right-side button{
+    border: none;
+}
 
 /* end página serviços */
 
@@ -323,5 +411,33 @@ nav .close-icon{
     position: absolute;
     top: 46px;
     right: 28px;
+   }
+   /* Página home responsivo */
+   .faca-mais .faca-mais-text{
+    margin-top: 10px;
+    padding: 0 20px;
+    order: 1;
+   }
+   .faca-mais .container{
+    flex-direction: column;
+   }
+   .faca-mais .faca-mais-text h3{
+    font-size: 48px;
+   }
+   .faca-mais .faca-mais-text, 
+   .faca-mais .faca-mais-img{
+    width: 100%;
+   }
+
+   /* banner responsivo */
+   .banner .banner-text{
+    padding: 0;
+    margin: 80px;
+   }
+   .banner .banner-text h1{
+    font-size: 80px;
+   }
+   .banner .banner-text p{
+    font-size: 15px;
    }
 }
